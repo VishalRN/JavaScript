@@ -1,0 +1,57 @@
+71 - Inserting and Removing Elements using JavaScript 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="vishal" data-conceptby="rohan">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I have been inserted <b>by Vishal</b>"
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").before(div);
+            // document.querySelector(".container").append(div);
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+            
+
+            document.querySelector(".box") // <div class="box" style="display: flex;" data-createdby="Vishal" data-conceptby="rohan">Hey I am a box</div>
+            document.querySelector(".box").innerHTML // "Hey I am a box"
+            document.querySelector(".container").outerHTML // "<div class="container red bg-green">...</div>"
+            document.querySelector(".container").innerText // "Hey I am a box"
+            document.querySelector(".box").innerText // "Hey I am a box"
+            document.querySelector(".container").tagName // "DIV" (for elements only)
+            document.querySelector(".container").nodeName // "DIV" (for any kind of nodes)
+            document.querySelector(".container").textContent // "Hey I am a box" (similar to innerText but includes hidden elements)
+            document.querySelector(".box").innerHTML = "Hey Good Morning" // changes the inner HTML of the first box
+            document.querySelector(".box").hasAttributes("style")  // true (checks if the first box has a style attribute)
+            document.querySelector(".box").getAttribute("style") // "display: flex;" (gets the value of the style attribute)
+            document.querySelector(".box").setAttribute("style", "display: block;") // changes the style attribute of the first box
+            document.querySelector(".box").attributes // NamedNodeMap of attributes (like a dictionary of attributes)
+            document.querySelector(".box").removeAttribute("style") // removes the style attribute from the first box
+            document.designMode = "on" // enables design mode for the document, allowing you to edit the content directly in the browser
+            document.querySelector(".box").dataset // DOMStringMap of data attributes (like data-createdby and data-conceptby)
+            document.querySelector(".box").remove() // removes the first box from the document
+            document.querySelector(".container").classList // DOMTokenList of classes (like red and bg-green)
+            document.querySelector(".container").classList.add("new-class") // adds a new class to the container
+            document.querySelector(".container").classList.remove("new-class") // removes the new class from the container
+            document.querySelector(".container").classList.toggle("red") // toggles the new class on the container (adds it if not present, removes it if present)
+            document.querySelector(".container").className // "container red bg-green" (string of class names)
+        </script>
+    </div>
+</body>
+
+</html>
