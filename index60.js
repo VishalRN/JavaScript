@@ -17,7 +17,7 @@ let real_name = "Vishal"
 let friend = "Rohan"
 console.log("His name is " + real_name + " and his friends name is " + friend)
 
-//Templete Literals
+//Templete Literals (It helps us to use both single and double quotes inside a string)
 console.log(`His name is ${real_name} and his friends name is ${friend}`)
 
 let b = "ShivamSh"

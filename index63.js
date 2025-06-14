@@ -1,6 +1,6 @@
-//Arrays - Collection of multiple data types like number,strings,objects
-// Arrays are mutable
 // 63 - JavaScript Arrays
+// Arrays - Collection of multiple data types like number,strings,objects
+// Arrays are mutable
 
 let arr = [1, 2, 4, 5, 7]
 //  Index  0, 1, 2, 3, 4
@@ -18,11 +18,18 @@ console.log(arr.toString()) // converting to string
 console.log(arr.join(" and "))
 
 
+// pop removes the last element and returns it 
+// push adds the element at the end of an array
+// shift removes the first element and returns it 
+// unshift adds an element to the beginning and returns the new array length
+// splice can be used to add new items to an array
+// slice out a piece froma an array and it creates a new array
 
 // let numbers = [1, 2, 3, 4, 5] 
 // numbers.splice(1, 2)    
 // numbers.splice(1, 3)  
 // numbers.splice(1, 3, 222, 333) 
+
 
 
 // loops in an array
@@ -38,6 +45,7 @@ let a = [1, 93, 5, 6, 88]
 //     console.log(value, index, arr)
 // })
 
+// for in loop 
 // let obj = {
 //     a: 1,
 //     b: 2,
@@ -54,6 +62,7 @@ let a = [1, 93, 5, 6, 88]
 for (const value of a) {
     console.log(value)
 }
+
 
 
 // Map and Filter in Arrays
