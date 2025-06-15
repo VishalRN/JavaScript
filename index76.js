@@ -1,3 +1,5 @@
+// 76 - Async/Await & Fetch API in JavaScript with Examples
+
 // async function getData() {
 //     // Simulate getting data from a server
 //     return new Promise((resolve, reject) => {
@@ -20,7 +22,7 @@ async function getData() {
 
     let x = await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
-                body: JSON.stringify({
+                body: JSON.stringify({ 
                     title: 'foo',
                     body: 'bar',
                     userId: 1,

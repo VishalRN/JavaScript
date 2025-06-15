@@ -1,0 +1,68 @@
+<! 80 - Classes & Objects - Object Oriented Programming in Js
+Object Oriented Programming  is used to create real world objects with real world templates 
+for example bank where multiple people fill the form and each filled form represents as an object and the classes are blueprint which are used like templates which are used to create the form >
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let obj = {
+        //     a: 1,
+        //     b: "Harry"
+        // }
+
+        // console.log(obj)
+
+        // let animal = {
+        //     eats: true
+        // };0
+
+        // let rabbit = {
+        //     jumps: true
+        // };
+
+        // rabbit.__proto__ = animal; // protoype helps in adding  multiple properties to an object 
+
+        class Animal {
+            constructor(name) { // constructor runs new object whenever it is created 
+                this.name = name // this is way to create properties in an object which is being created 
+                console.log("Object is created...")
+            }
+
+            eats() {
+                console.log("Kha raha hoon")
+            }
+            jumps() {
+                console.log("Kood raha hoon")
+            }
+        }
+
+
+        class Lion extends Animal {
+            constructor(name) {
+                super(name)
+                console.log("Object is created and he is a lion...")
+            }
+
+            eats() {
+                super.eats()
+                console.log("Kha raha hoon roar")
+            }
+        }
+
+        let a = new Animal("Bunny");
+        console.log(a)
+
+        let l = new Lion("Shera")
+        console.log(l)
+    </script>
+</body>
+
+</html>

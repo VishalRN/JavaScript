@@ -39,6 +39,7 @@
         </section>
     </div>
     <script>
+        // event bubbling - listening any element,that element will be listened but also the parent element also will be activated (clicking on child element will also trigger its parent) 
         document.querySelector(".child").addEventListener("click", (e) => {
             e.stopPropagation()
             alert("Child Was clicked")
@@ -64,7 +65,7 @@
         // }, 1000);
 
         // console.log(a)
-        // clearInterval(1);
+        // clearInterval(1); it stops the interval 
 
         let a = setTimeout(() => {
             document.querySelector(".childContainer").style.background = getRandomColor();
